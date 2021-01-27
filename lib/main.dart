@@ -1,10 +1,20 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
-      home: Scaffold(
-    appBar: AppBar(
-      title: Text('My app'),
-    ),
-  )));
+  runApp(HomePage());
+}
+
+class HomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+          appBar: AppBar(
+            title: Text('My App'),
+          ),
+        ),
+        theme: ThemeData(
+          primarySwatch: Colors.amber,
+        ));
+  }
 }
